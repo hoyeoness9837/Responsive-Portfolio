@@ -9,6 +9,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./sticky-footer/sticky-footer.css" />
     <title>Hoyeon's Contact</title>
   </head>
   <body>
@@ -44,6 +45,57 @@
         </ul>
       </div>
     </nav>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Contact</h3>
+        <p class="card-text">
+          <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="John Doe"
+              />
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput">E-mail</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="example@gmail.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Message</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput2"
+                placeholder="Enter your message"
+              />
+            </div>
+          </form>
+        </p>
+        <button type="button" class="btn btn-outline-success" onclick="myAlert()" style = "
+            color: rgba(20, 146, 115, 0.76); border-color: rgba(20, 146, 115, 0.76)
+          ">Sumit</button>
+      </div>
+    </div>
+        <!-- sticky-footer Below -->
+        <footer class="footer mt-auto py-3">
+        <div class="container">
+          <span class="text-muted">Copyright</span>
+        </div>
+      </footer>
+      <script>
+      function myAlert(){
+        alert(
+      "You successfully submitted a message!")
+      }
+    </script>
     <!-- Bootscrap JS Below -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
