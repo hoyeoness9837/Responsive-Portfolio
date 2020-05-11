@@ -44,57 +44,120 @@
       </div>
     </nav>
     <header>Projects</header>
-    <div class="card">
-      <ul class="list-unstyled">
-        <li class="media">
-          <img
-            src="./assets/Images/project1.png"
-            class="align-self-center mr-3"
-            alt="..."
-          />
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">Ōkido's Pokémon Research Institute</h5>
-            Mobile-first UI application, which shows Pokémon user searched and
-            shows which Pokémon week against and strong against.
-            <h6>
-              <li class="font-weight-lighter">
-                Built with Materialize
-              </li>
-              <li class="font-weight-lighter">
-                Used two server-side APIs including one third-party API
-              </li>
-            </h6>
-            <a
-              href="https://alanhlee.github.io/PokemonIndex/"
-              class="badge badge-info"
-              >Play Demo</a
+    <div class="accordion" id="projectAccordian">
+      <div class="card">
+        <div class="card-header" id="project1">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
             >
-            <a
-              href="https://github.com/alanhlee/PokemonIndex"
-              class="badge badge-dark"
-              >View Source</a
+              Project # 1 (Ōkido's Pokémon Research Institute)
+            </button>
+          </h2>
+        </div>
+        <div
+          id="collapseOne"
+          class="collapse show"
+          aria-labelledby="project1"
+          data-parent="#projectAccordian"
+        >
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img
+                  src="./assets/Images/project1.png"
+                  class="align-self-center"
+                  alt="..."
+                />
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Ōkido's Pokémon Research Institute</h5>
+                  Mobile-first UI application, which shows Pokémon user searched
+                  and shows which Pokémon week against and strong against.
+                  <h6>
+                    <li class="font-weight-lighter">
+                      - Built with Materialize
+                    </li>
+                    <li class="font-weight-lighter">
+                      - Used two server-side APIs including one third-party API
+                    </li>
+                  </h6>
+                  <a
+                    href="https://alanhlee.github.io/PokemonIndex/"
+                    class="badge badge-info"
+                    >Play Demo</a
+                  >
+                  <a
+                    href="https://github.com/alanhlee/PokemonIndex"
+                    class="badge badge-dark"
+                    >View Source</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="project2">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="true"
+              aria-controls="collapseTwo"
             >
+              Project # 2 (?)
+            </button>
+          </h2>
+        </div>
+        <div
+          id="collapseTwo"
+          class="collapse show"
+          aria-labelledby="project2"
+          data-parent="#projectAccordian"
+        >
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img
+                  src="#"
+                  class="align-self-center"
+                  alt="..."
+                />
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">project title</h5>
+                  project description
+                  <h6>
+                    <li class="font-weight-lighter">
+                      - skill1
+                    </li>
+                    <li class="font-weight-lighter">
+                      - skill2
+                    </li>
+                  </h6>
+                  <a
+                    href="#"
+                    class="badge badge-info"
+                    >Play Demo</a
+                  >
+                  <a
+                    href="#"
+                    class="badge badge-dark"
+                    >View Source</a
+                  >
+                </div>
+              </li>
+            </ul>
           </div>
-        </li>
-        <!-- <li class="media my-4">
-          <img src="..." class="align-self-center mr-3" alt="..." />
-          <div class="media-body">
-            <h5 class="mt-0 mb-1"></h5>
-          </div>
-        </li>
-        <li class="media">
-          <img src="..." class="mr-3" alt="..." />
-          <div class="media-body">
-            <h5 class="mt-0 mb-1"></h5>.
-          </div>
-        </li>
-        <li class="media my-4">
-          <img src="..." class="align-self-center mr-3" alt="..." />
-          <div class="media-body">
-            <h5 class="mt-0 mb-1"></h5>
-          </div>
-        </li> -->
-      </ul>
+        </div>
+      </div>
     </div>
     <!-- sticky-footer Below -->
     <footer class="footer mt-auto py-3"></footer>
