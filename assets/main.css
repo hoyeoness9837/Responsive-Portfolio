@@ -1,0 +1,75 @@
+header {
+  text-align: center;
+  font-size: 30px;
+  margin: 10px 10px;
+}
+
+body{
+  background-image: url(./Images/wall.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-around;
+}
+
+.main-item {
+  background-color: #db913c56;
+  padding: 1rem;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.material-icons,
+a{
+  color: black;
+}
+
+.main-item:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5); /* 커서를 버튼위로 올려뒀을때 뒤에 비치는 그림자 색 */
+  transform: translateY(-0.1rem); /* 커서를 올리면 화면쪽으로 뜸 */
+  transition: transform 150ms; /* 위에 움직임의 속도 */
+}
+
+.media {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 10px;
+}
+
+.media-body {
+  padding-top: 10px;
+}
+
+.align-self-center {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+@media only screen and (max-width: 650px) {
+  header {
+    text-align: center;
+    font-size: 30px;
+    margin: 5px 5px;
+  }
+
+  .media {
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .align-self-center {
+    margin: 0px;
+    height: 70vh;
+  }
+}

@@ -1,19 +1,23 @@
+.material-icons {
+  font-size: 15px;
+}
+
 header {
   text-align: center;
   font-size: 30px;
   margin: 10px 10px;
 }
 
-.media{
-  border: 1px solid rgba(0,0,0,.125);
-  padding: 10px
+.media {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 10px;
 }
 
-.media-body{
+.media-body {
   padding-top: 10px;
 }
 
-.align-self-center{
+.align-self-center {
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -31,7 +35,7 @@ header {
     margin-right: 30px;
   }
 
-  .align-self-center{
+  .align-self-center {
     margin: 0px;
     height: 70vh;
   }
