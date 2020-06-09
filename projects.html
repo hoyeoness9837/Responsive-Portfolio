@@ -9,7 +9,10 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/mystyle.css" />
     <title>Hoyeon Kim's Portfolio</title>
   </head>
@@ -46,7 +49,6 @@
       <div class="card">
         <div class="card-header" id="project1">
           <h2 class="mb-0">
-            
             <button
               class="btn btn-link"
               type="button"
@@ -55,7 +57,8 @@
               aria-expanded="true"
               aria-controls="collapseOne"
             >
-            <i class="material-icons">expand_more</i> Project # 1 (Ōkido's Pokémon Research Institute)
+              Project # 1 (Ōkido's Pokémon Research Institute)
+              <i class="material-icons" id="expandbtn">expand_more</i>
             </button>
           </h2>
         </div>
@@ -87,11 +90,13 @@
                   </h6>
                   <a
                     href="https://alanhlee.github.io/PokemonIndex/"
+                    target="_blank"
                     class="badge badge-info"
                     >Play Demo</a
                   >
                   <a
                     href="https://github.com/alanhlee/PokemonIndex"
+                    target="_blank"
                     class="badge badge-dark"
                     >View Source</a
                   >
@@ -111,8 +116,9 @@
               data-target="#collapseTwo"
               aria-expanded="true"
               aria-controls="collapseTwo"
-            ><i class="material-icons">expand_more</i>
-              Project # 2 (?)
+            >
+              Project # 2 (NotFaceBook)
+              <i class="material-icons" id="expandbtn">expand_more</i>
             </button>
           </h2>
         </div>
@@ -125,20 +131,38 @@
           <div class="card-body">
             <ul class="list-unstyled">
               <li class="media">
-                <img src="#" class="align-self-center" alt="..." />
+                <img
+                  src="./assets/Images/project2.PNG"
+                  class="align-self-center"
+                  alt="..."
+                />
                 <div class="media-body">
-                  <h5 class="mt-0 mb-1">project title</h5>
-                  project description
+                  <h5 class="mt-0 mb-1">Not FaceBook</h5>
+                  Mobile and Website UI Full-Stack application, which allows
+                  users to have unique id and password. Users can make friends
+                  with other users, post images and whatever text they want to,
+                  and access to a chatroom too!
                   <h6>
                     <li class="font-weight-lighter">
-                      - skill1
+                      - Did not use any styling library.
                     </li>
                     <li class="font-weight-lighter">
-                      - skill2
+                      - HTML, CSS, JS, Sequelize, MySQL, Express, moment,
+                      Node.js, Heroku (w/ JAWSDB) were utilized.
                     </li>
                   </h6>
-                  <a href="#" class="badge badge-info">Play Demo</a>
-                  <a href="#" class="badge badge-dark">View Source</a>
+                  <a
+                    href="https://n0tfacebook.herokuapp.com"
+                    target="_blank"
+                    class="badge badge-info"
+                    >Visit website</a
+                  >
+                  <a
+                    href="https://github.com/pravinsisowath/notFacebook"
+                    target="_blank"
+                    class="badge badge-dark"
+                    >View Source</a
+                  >
                 </div>
               </li>
             </ul>
@@ -163,5 +187,25 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document
+        .getElementById("expandbtn")
+        .addEventListener("click", (event) => {
+          event.preventDefault();
+          switch (event.target.id) {
+            case "expandbtn":
+              document.getElementById(
+                "expandbtn"
+              ).innerHTML = `<i class="material-icons" id="collapsebtn">expand_less</i>`;
+              break;
+
+            case "collapsebtn":
+              document.getElementById(
+                "collapsebtn"
+              ).innerHTML = `<i class="material-icons" id="expandbtn">expand_more</i>`;
+              break;
+          }
+        });
+    </script>
   </body>
 </html>
