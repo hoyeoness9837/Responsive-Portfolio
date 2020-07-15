@@ -1,0 +1,42 @@
+.material-icons {
+  font-size: 15px;
+}
+
+header {
+  text-align: center;
+  font-size: 30px;
+  margin: 10px 10px;
+}
+
+.media {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 10px;
+}
+
+.media-body {
+  padding-top: 10px;
+}
+
+.align-self-center {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+@media only screen and (max-width: 650px) {
+  header {
+    text-align: center;
+    font-size: 30px;
+    margin: 5px 5px;
+  }
+
+  .media {
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .align-self-center {
+    margin: 0px;
+    height: 70vh;
+  }
+}

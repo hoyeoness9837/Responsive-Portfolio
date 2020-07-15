@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/mystyle.css" />
+    <link rel="stylesheet" href="./assets/project.css" />
     <title>Hoyeon Kim's Portfolio</title>
   </head>
   <body>
@@ -58,7 +58,7 @@
               aria-controls="collapseOne"
             >
               Project # 1 (Ōkido's Pokémon Research Institute)
-              <i class="material-icons" id="expandbtn">expand_more</i>
+              
             </button>
           </h2>
         </div>
@@ -72,9 +72,9 @@
             <ul class="list-unstyled">
               <li class="media">
                 <img
-                  src="./assets/Images/project1.png"
+                  src="https://user-images.githubusercontent.com/58324084/85816114-3cca9500-b71f-11ea-8f77-15d1480d0e88.png"
                   class="align-self-center"
-                  alt="..."
+                  alt="Project 1 Image"
                 />
                 <div class="media-body">
                   <h5 class="mt-0 mb-1">Ōkido's Pokémon Research Institute</h5>
@@ -82,9 +82,10 @@
                   and shows which Pokémon week against and strong against.
                   <h6>
                     <li class="font-weight-lighter">
-                      - Built with Materialize
+                      - Stylied with Materialize
                     </li>
                     <li class="font-weight-lighter">
+                      - HTML, CSS, Vanila JavaScript, Axios
                       - Used two server-side APIs including one third-party API
                     </li>
                   </h6>
@@ -118,7 +119,7 @@
               aria-controls="collapseTwo"
             >
               Project # 2 (NotFaceBook)
-              <i class="material-icons" id="expandbtn">expand_more</i>
+              
             </button>
           </h2>
         </div>
@@ -132,22 +133,22 @@
             <ul class="list-unstyled">
               <li class="media">
                 <img
-                  src="./assets/Images/project2.PNG"
+                  src="https://user-images.githubusercontent.com/58324084/85816147-55d34600-b71f-11ea-9d05-3bfc0f566f04.PNG"
                   class="align-self-center"
-                  alt="..."
+                  alt="Project 2 Image"
                 />
                 <div class="media-body">
                   <h5 class="mt-0 mb-1">Not FaceBook</h5>
-                  Mobile and Website UI Full-Stack application, which allows
-                  users to have unique id and password. Users can make friends
-                  with other users, post images and whatever text they want to,
-                  and access to a chatroom too!
+                  Website UI Full-Stack application, which allows users to
+                  have create an account with unique id and password. Users
+                  can have real-time experience of making friends with other
+                  users, post images and whatever text they want to.
                   <h6>
                     <li class="font-weight-lighter">
                       - Did not use any styling library.
                     </li>
                     <li class="font-weight-lighter">
-                      - HTML, CSS, JS, Sequelize, MySQL, Express, moment,
+                      - HTML, CSS, JS, Sequelize, MySQL, Express, moment.io , socket.io,
                       Node.js, Heroku (w/ JAWSDB) were utilized.
                     </li>
                   </h6>
@@ -159,6 +160,66 @@
                   >
                   <a
                     href="https://github.com/pravinsisowath/notFacebook"
+                    target="_blank"
+                    class="badge badge-dark"
+                    >View Source</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="project3">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseThree"
+              aria-expanded="true"
+              aria-controls="collapseThree"
+            >
+              Project # 3 (ErrorFlow)
+              
+            </button>
+          </h2>
+        </div>
+        <div
+          id="collapseThree"
+          class="collapse show"
+          aria-labelledby="project3"
+          data-parent="#projectAccordian"
+        >
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img
+                  src="https://user-images.githubusercontent.com/58324084/87518895-b75b4600-c635-11ea-98ca-b3440fe1b762.png"
+                  class="align-self-center"
+                  alt="Project 3 Image"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">ErrorFlow</h5>
+                  A lot of web developers come across all different kinds of red error alerts when they code. ErrorFlow is a react-app/website where people can share their errors in code-block style text and freely discuss them by leaving comments and mark them as solved if you were able to find a solution. Also can able to create a unique chatting room if anyone wants to have a secret conversation.
+                  <h6>
+                    <li class="font-weight-lighter">
+                      - Stylied with Ant Design.
+                    </li>
+                    <li class="font-weight-lighter">
+                      - HTML, CSS, JS, React.js, MongoDB, Mongoose, Express, Node.js, socket.io,
+                      Node.js, Heroku (w/ mLab) were utilized.
+                    </li>
+                  </h6>
+                  <a
+                    href="https://guarded-harbor-13074.herokuapp.com/"
+                    target="_blank"
+                    class="badge badge-info"
+                    >Play Demo</a
+                  >
+                  <a
+                    href="https://github.com/UCI-Bootcamp-Project-3-ErrorFlow/ErrorFlow"
                     target="_blank"
                     class="badge badge-dark"
                     >View Source</a
@@ -187,25 +248,6 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script>
-      document
-        .getElementById("expandbtn")
-        .addEventListener("click", (event) => {
-          event.preventDefault();
-          switch (event.target.id) {
-            case "expandbtn":
-              document.getElementById(
-                "expandbtn"
-              ).innerHTML = `<i class="material-icons" id="collapsebtn">expand_less</i>`;
-              break;
 
-            case "collapsebtn":
-              document.getElementById(
-                "collapsebtn"
-              ).innerHTML = `<i class="material-icons" id="expandbtn">expand_more</i>`;
-              break;
-          }
-        });
-    </script>
   </body>
 </html>
